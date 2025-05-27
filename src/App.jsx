@@ -1,61 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/listina-loga.svg'
-import viteLogo from './assets/blueshappe.png'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Examensarbete from "./pages/Examensarbete";
+import "./App.css";
+import Header from "./Header";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        
-        
-          <img src={reactLogo} className="logo react" alt="React logo" />
-
+      <div className="App">
+        <BrowserRouter>
+       <Header/>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="/Examensarbete" element={<Examensarbete />} />
+          </Routes>
+          
+        </BrowserRouter>
       </div>
-      <div className="hero">
-
-      <h1>Hur man gör en bra och tillgänglig sidomeny</h1>
-      </div>
-      <div className="card">
-        <img className="img-Siez" src="" alt="" />
-
-        <div className="card-text">
-        <h2>Struktur – Vad ska finnas i en bra sidomeny?</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus autem temporibus animi maxime nihil pariatur, blanditiis inventore odio vero cum cumque voluptas sit voluptates debitis consequuntur assumenda tenetur nulla facilis.
-        </p>
-        </div>
-      </div>
-
-        <div className="card">
-
-        <div className="card-text">
-        <h2>Design – Hur gör man den snygg och användbar?</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus autem temporibus animi maxime nihil pariatur, blanditiis inventore odio vero cum cumque voluptas sit voluptates debitis consequuntur assumenda tenetur nulla facilis.
-        </p>
-        </div>
-        <img className="img-Siez" src="" alt="" />
-      </div>
-        <div className="card">
-        <img className="img-Siez" src="" alt="" />
-
-        <div className="card-text">
-        <h2>Interaktivitet – Hur det fungerar tekniskt</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus autem temporibus animi maxime nihil pariatur, blanditiis inventore odio vero cum cumque voluptas sit voluptates debitis consequuntur assumenda tenetur nulla facilis.
-        </p>
-        </div>
-      </div>
-      <p>
-        litte täxt och sådant
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
