@@ -1,5 +1,5 @@
 import "./Home.css";
-
+import ListinaImg from "../assets/logga-listina.png";
 
 function Home() {
 
@@ -11,7 +11,7 @@ function Home() {
         <h1>Hur man gör en bra och tillgänglig sidomeny</h1>
       </div>
       <div className="card">
-        <img className="img-Siez" src="" alt="" />
+        <img className="img-Siez" src={ListinaImg} alt="bild på loggan" />
 
         <div className="card-text">
           <h2>Struktur – Vad ska finnas i en bra sidomeny?</h2>
