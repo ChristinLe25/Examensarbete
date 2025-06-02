@@ -7,7 +7,7 @@ function Home() {
 
   return (
     <div>
-      <div></div>
+      
       <div className="hero">
         <h1>Hur man gör en bra och tillgänglig sidomeny</h1>
       </div>
@@ -19,8 +19,8 @@ function Home() {
         />
 
         <div className="card-text">
-          <h2>
-            Bakground <br />
+          <h2 >
+            Bakground 
             Hur vi kom fram till Sidomenyn?
           </h2>
           <p>
@@ -58,6 +58,7 @@ function Home() {
       </div>
 
       <div className="card">
+        <img className="img-Siez" src={UseresearchIMG} alt="Bild på Persona" />
         <div className="card-text">
           <h2>
             Useresearch <br /> Användarinsikter: Fastighetsmäklare i en digital
@@ -82,7 +83,6 @@ function Home() {
             digitala verktyg måste stödja båda.
           </p>
         </div>
-        <img className="img-Siez" src={UseresearchIMG} alt="Bild på Persona" />
       </div>
       <div className="card">
         <img
