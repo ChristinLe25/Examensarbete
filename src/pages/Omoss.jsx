@@ -1,12 +1,10 @@
 import "./Home.css";
-
-function Examensarbete() {
-
+function Omoss() {
   return (
-     <div>
-      examensarbetet
+    <div>
+      Om oss
       <div className="hero">
-        <h1>Examensarbetets syfte</h1>
+        <h1>Hur man gör en bra och tillgänglig sidomeny</h1>
       </div>
       <div className="card">
        
@@ -36,4 +34,4 @@ function Examensarbete() {
   );
 }
 
-export default Examensarbete;
+export default Omoss;

@@ -1,26 +1,26 @@
 import { Link } from "react-router-dom";
+import "./Header.css";
+
 function Header() {
-
   return (
-<div>
-    <div>
+    <div className="nav">
+      <div>
+        <Link className="link" to="/">
+          Hem
+        </Link>
+      </div>
 
-       <Link className="link" to="/">
-            Hem
-            </Link> 
+      <div>
+        <Link className="link" to="/Omoss">
+          Omoss
+        </Link>
+      </div>
+      <div>
+        <Link className="link" to="/Examensarbete">
+          Examensarbete
+        </Link>
+      </div>
     </div>
-    
-    <div>
-       <Link className="link" to="/Contact">
-            Contact
-            </Link>
-    </div>
-    <div>
-       <Link className="link" to="/Examensarbete">
-            Examensarbete
-            </Link>
-    </div>
-</div>
   );
 }
 
