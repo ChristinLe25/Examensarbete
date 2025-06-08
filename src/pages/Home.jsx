@@ -7,7 +7,11 @@ function Home() {
   return (
     <div>
       <div className="hero">
-        <h1>Tydlig och tillgänglig navigering – från behov till lösning</h1>
+        <h1>
+          Tydlig och tillgänglig navigering
+          <br />
+          från behov till lösning
+        </h1>
       </div>
       <div className="card">
         <img
@@ -142,8 +146,8 @@ function Home() {
             </li>
           </ul>
         </div>
+        <p>Projektet genomfördes av Christin och Tayeba</p>
       </div>
-      <p>Projektet genomfördes av Christin och Tayeba</p>
     </div>
   );
 }
