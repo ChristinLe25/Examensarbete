@@ -7,7 +7,7 @@ function Home() {
   return (
     <div>
       <div className="hero">
-        <h1>Hur man gör en bra och tillgänglig sidomeny</h1>
+        <h1>Tydlig och tillgänglig navigering – från behov till lösning</h1>
       </div>
       <div className="card">
         <img
@@ -15,7 +15,6 @@ function Home() {
           src={bakgroundIMG}
           alt="bild av hero, om hur vi kom fram till sidomeny"
         />
-
         <div className="card-text">
           <h2>Bakground Hur vi kom fram till Sidomenyn?</h2>
           <p>
@@ -53,6 +52,10 @@ function Home() {
 
       <div className="card">
         <img className="img-Siez" src={UseresearchIMG} alt="Bild på Persona" />
+        <p>
+          Bilden visar två av de personas vi har skapat för att representera
+          olika typer av användare och deras behov.
+        </p>
         <div className="card-text">
           <h2>
             Useresearch <br /> Användarinsikter: Fastighetsmäklare i en digital
@@ -87,6 +90,10 @@ function Home() {
           src={DesignRamverkIMG}
           alt="Bild på UX honeycomb Ramverk"
         />
+        <p>
+          Bilden visar det ramverk Peter Morville’s UX Honeycomb som vi har
+          arbetat utifrån under projektets gång
+        </p>
 
         <div className="card-text">
           <h2>

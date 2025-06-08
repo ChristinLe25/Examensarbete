@@ -1,8 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Omoss from "./pages/Omoss";
+import Projektlogik from "./pages/Projektlogik";
 import Examensarbete from "./pages/Examensarbete";
-import "./App.css";
 import Header from "./Header";
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
        <Header/>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Omoss" element={<Omoss />} />
+            <Route path="/Projektlogik" element={<Projektlogik />} />
             <Route path="/Examensarbete" element={<Examensarbete />} />
           </Routes>
           

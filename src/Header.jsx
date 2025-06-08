@@ -11,8 +11,8 @@ function Header() {
       </div>
 
       <div>
-        <Link className="link" to="/Omoss">
-          Omoss
+        <Link className="link" to="/Projektlogik">
+          Projektlogik
         </Link>
       </div>
       <div>
