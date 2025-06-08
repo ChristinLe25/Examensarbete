@@ -3,6 +3,7 @@
   justify-content: center;
   gap: 38px;
   padding: 28px;
+  flex-wrap: wrap;
 }
 
 .link {
